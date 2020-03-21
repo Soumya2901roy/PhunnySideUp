@@ -10,9 +10,9 @@ with open('content.txt', 'a', encoding='utf-8') as file:
     for i in myjpgFiles:
         img=Image.open(i)
         text=tess.image_to_string(img)
-        file.write(str(i))
-        file.write('************************************************************\n')
+        #file.write(str(i))
+        file.write('\n************************************************************\n')
         file.write(text)
-        file.write('************************************************************\n')
+        file.write('\n************************************************************\n')
         print(str(i))
 file.close()
